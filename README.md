@@ -1,61 +1,58 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🚀 Evaluación 2 - Sistema de Login con Laravel y AdminLTE 3
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![AdminLTE](https://img.shields.io/badge/AdminLTE-3.2.0-blue?style=for-the-badge)
+![PHP](https://img.shields.io/badge/PHP-8.2.12-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.2-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-## About Laravel
+## 📋 Descripción del Proyecto
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Sistema de autenticación desarrollado como parte de la **Evaluación 2** del curso, implementando un login personalizado con **Laravel** y la plantilla **AdminLTE 3**.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🖼️ Capturas del Sistema
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 📱 Página de Login
+![Login Page](https://github.com/user-attachments/assets/db36d4e6-1804-4a9f-abca-3b26fd58c693)
+*Formulario de login con diseño AdminLTE 3*
 
-## Learning Laravel
+### 🏠 Dashboard Principal
+![Dashboard](https://github.com/user-attachments/assets/6a8b119c-491a-4222-9e4e-d135a69c6c26)
+*Dashboard con mensaje de bienvenida y estadísticas*
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 🛠️ Tecnologías Utilizadas
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- **Backend:** Laravel 12.x ([Documentación](https://laravel.com/docs/12.x/releases))
+- **Frontend:** AdminLTE 3, Bootstrap 5 ([Instalación AdminLTE](https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Installation)) ([Instalar Bootstrap](https://www.neoguias.com/instalar-bootstrap-laravel/))
+- **Autenticación:** Sistema personalizado sin librerías
+- **Servidor:** PHP 8.2.12
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
+## ⚡ Instalación y Configuración
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Prerrequisitos
+- PHP 8.2.12 o superior
+- Composer 2.6+
+- Node.js 18+ (para assets)
 
-### Premium Partners
+### Pasos de instalación
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+# Clonar el repositorio
+git clone https://github.com/Jorge9536/SegundaEvaluaci-n.git
 
-## Contributing
+# Entrar al directorio
+cd SegundaEvaluacion
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+# Instalar dependencias de PHP
+composer install
 
-## Code of Conduct
+# Instalar dependencias de Node (opcional)
+npm install
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+# Configurar variables de entorno
+cp .env.example .env
 
-## Security Vulnerabilities
+# Generar key de la aplicación
+php artisan key:generate
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# Ejecutar el servidor
+php artisan serve
